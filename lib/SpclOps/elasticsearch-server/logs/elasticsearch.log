@@ -1,0 +1,48 @@
+[2015-02-13 18:35:32,368][INFO ][node                     ] [Mauvais] version[1.4.3], pid[26682], build[36a29a7/2015-02-11T14:23:15Z]
+[2015-02-13 18:35:32,371][INFO ][node                     ] [Mauvais] initializing ...
+[2015-02-13 18:35:32,381][INFO ][plugins                  ] [Mauvais] loaded [], sites []
+[2015-02-13 18:35:38,277][WARN ][common.network           ] failed to resolve local host, fallback to loopback
+java.net.UnknownHostException: (none): (none): No address associated with hostname
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1473)
+	at org.elasticsearch.common.network.NetworkUtils.<clinit>(NetworkUtils.java:55)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.<init>(NettyHttpServerTransport.java:159)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:54)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:98)
+	at org.elasticsearch.common.inject.FactoryProxy.get(FactoryProxy.java:52)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:837)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:42)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:57)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:200)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:830)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:175)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:110)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:197)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:70)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:203)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.net.UnknownHostException: (none): No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:901)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1293)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1469)
+	... 29 more
+[2015-02-13 18:35:38,399][INFO ][node                     ] [Mauvais] initialized
+[2015-02-13 18:35:38,400][INFO ][node                     ] [Mauvais] starting ...
+[2015-02-13 18:35:38,530][INFO ][transport                ] [Mauvais] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.10.10.17:9300]}
+[2015-02-13 18:35:38,577][INFO ][discovery                ] [Mauvais] elasticsearch/PgyJZq-WRpOa7KStuqsaTg
+[2015-02-13 18:35:41,787][INFO ][cluster.service          ] [Mauvais] detected_master [Bombshell][f86pgvE2TrOZvwh9IqDPEg][so-edgar][inet[/10.10.10.13:9300]], added {[Bombshell][f86pgvE2TrOZvwh9IqDPEg][so-edgar][inet[/10.10.10.13:9300]],}, reason: zen-disco-receive(from master [[Bombshell][f86pgvE2TrOZvwh9IqDPEg][so-edgar][inet[/10.10.10.13:9300]]])
+[2015-02-13 18:35:41,836][INFO ][http                     ] [Mauvais] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.10.10.17:9200]}
+[2015-02-13 18:35:41,839][INFO ][node                     ] [Mauvais] started
