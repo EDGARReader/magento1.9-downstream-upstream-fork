@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <modules>
+                <spclops_catalogelasticsearch>
+                        <version>0.0.1</version>
+                </spclops_catalogelasticsearch>
+        </modules>
+    <blocks>
+            <helloworld>
+                <rewrite>
+         <helloworld>SpclOps_HelloWorld_Block_HelloWorld</helloworld>
+        </rewrite>
+            </helloworld>
+     </blocks>
+ 
+        </global>
+       <frontend>
+                <routers>
+                        <helloworld>
+                                <use>standard</use>
+                                <args>
+                                      <module>M4U_HelloWorld</module>
+                                      <frontName>helloworld</frontName>
+                                </args>
+                        </helloworld>
+                </routers>
+        <layout>
+            <updates>
+                <helloworld>
+                      <file>helloworld.xml</file>
+                </helloworld>
+            </updates>
+            </layout>
+        </frontend>
+</config>

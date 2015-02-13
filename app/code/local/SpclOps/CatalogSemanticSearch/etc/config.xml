@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SpclOps_CatalogSemanticSearch>
+            <version>1.0.0</version>
+        </SpclOps_CatalogSemanticSearch>
+    </modules>
+    <global>
+        <helpers>
+            <spclops_catalogsemanticsearch>
+                <class>SpclOps_CatalogSemanticSearch_Helper</class>
+            </spclops_catalogsemanticsearch>
+        </helpers>
+        <models>
+            <spclops_catalogsemanticsearch>
+                <class>SpclOps_CatalogSemanticSearch_Model</class>
+            </spclops_catalogsemanticsearch>
+        </models>
+        <resources>
+            <spclops_catalogsemanticsearch_setup>
+                <setup>
+                    <module>SpclOps_CatalogSemanticSearch</module>
+                </setup>
+            </spclops_catalogsemanticsearch_setup>
+        </resources>
+    </global>
+</config>

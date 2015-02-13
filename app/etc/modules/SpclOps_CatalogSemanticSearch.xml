@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SpclOps_CatalogSemanticSearch>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends></depends>
+        </SpclOps_CatalogSemanticSearch>
+    </modules>
+</config>
